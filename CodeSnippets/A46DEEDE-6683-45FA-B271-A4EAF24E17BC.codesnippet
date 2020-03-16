@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>MOON_GetLazyUIView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    private lazy var &lt;#View#&gt;: UIView = {
+        let &lt;#View#&gt; = UIView()
+        &lt;#View#&gt;.backgroundColor = &lt;#Color#&gt;
+        return &lt;#View#&gt;
+    }()
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>A46DEEDE-6683-45FA-B271-A4EAF24E17BC</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>UIView 快速声明</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>MOON_GetLazyUIView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
