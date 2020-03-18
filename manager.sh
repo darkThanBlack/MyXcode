@@ -11,7 +11,7 @@ showMenu() {
 showMenu
 while read -p "XcodeSnippets>>>" idx; do
     if [[ ${idx} == "1" ]]; then
-        $(pwd)
+        $(rm -rf ${SNIPPET_PATH}/${SNIPPET_NAME})
         $(cp -a ./${SNIPPET_NAME} ${SNIPPET_PATH})
     elif [[ ${idx} == "0" ]]; then
         echo $PATH
