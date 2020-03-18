@@ -17,11 +17,11 @@
         &lt;#Button#&gt;.titleLabel?.font = UIFont.systemFont(ofSize: &lt;#Size#&gt;, weight: .regular)
         &lt;#Button#&gt;.setTitleColor(&lt;#T##color: UIColor?##UIColor?#&gt;, for: .normal)
         &lt;#Button#&gt;.setTitleColor(&lt;#T##color: UIColor?##UIColor?#&gt;.withAlphaComponent(0.6), for: .highlighted)
-        &lt;#Button#&gt;.addTarget(self, action: #selector(&lt;#Button#&gt;Pressed), for: .touchUpInside)
+        &lt;#Button#&gt;.addTarget(self, action: #selector(&lt;#Button#&gt;Event), for: .touchUpInside)
         return &lt;#Button#&gt;
     }()
     
-    @objc private func &lt;#Button#&gt;Pressed() {
+    @objc private func &lt;#Button#&gt;Event() {
         
     }</string>
 	<key>IDECodeSnippetIdentifier</key>
@@ -37,6 +37,6 @@
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>0</integer>
+	<integer>2</integer>
 </dict>
 </plist>

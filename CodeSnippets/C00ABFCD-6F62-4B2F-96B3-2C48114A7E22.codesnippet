@@ -3,34 +3,36 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>MOON_SnapKit</string>
+	<string>MOON_SingleTapGesture</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>            make.centerX.equalTo(box.snp.centerX)
-            make.centerY.equalTo(box.snp.centerY)
-            make.top.equalTo(box.snp.top).offset(0)
-            make.left.equalTo(box.snp.left).offset(0)
-            make.right.equalTo(box.snp.right).offset(-0)
-            make.bottom.equalTo(box.snp.bottom).offset(-0)
-            make.width.equalTo(0.0)
-            make.height.equalTo(0.0)</string>
+	<string>        &lt;#View#&gt;.isUserInteractionEnabled = true
+        let singleTap = UITapGestureRecognizer(target: self, action: #selector(&lt;#View#&gt;Event(gesture:)))
+        singleTap.numberOfTapsRequired = 1
+        singleTap.numberOfTouchesRequired = 1
+        &lt;#View#&gt;.addGestureRecognizer(singleTap)
+        
+        private func &lt;#View#&gt;Event(gesture: UITapGestureRecognizer) {
+            
+        }
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>D3985883-13CC-4BBA-8031-3708368E34C7</string>
+	<string>C00ABFCD-6F62-4B2F-96B3-2C48114A7E22</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetPlatformFamily</key>
 	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>SnapKit 相对布局</string>
+	<string>快速添加 View 单击手势事件</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>MOON_SnapKit</string>
+	<string>MOON_SingleTapGesture</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
