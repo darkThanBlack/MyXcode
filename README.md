@@ -19,7 +19,7 @@ $ ./manager.sh
 #### 关键字
 
 * 固定前缀：``MOON``
-
+* 片段文件名：OC 用``MOON__``开头，Swift 用``MOON_``开头以区分，快捷方式不变。
   * 新建文件：``MOON_New``
     * ``MOON_NewViewController``
     * ``MOON_NewView``

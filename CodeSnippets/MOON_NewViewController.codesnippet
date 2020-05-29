@@ -10,8 +10,11 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>class &lt;#NAME#&gt;ViewController: UIViewController {
-
+    
 //MARK: Interface
+    
+    //private let viewInfo = &lt;#NAME#&gt;ViewModel()
+    //private let request = &lt;#NAME#&gt;Requests()
     
 //MARK: Life Cycle
     
@@ -21,22 +24,13 @@
         loadViewsFor&lt;#NAME#&gt;(box: view)
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-    }
-    
 //MARK: Data
     
     private func loadRequestFor&lt;#NAME#&gt;() {
         
     }
-
-//MARK: View
     
-    private func loadNavigationsFor&lt;#NAME#&gt;() {
-        
-    }
+//MARK: View
     
     private func loadViewsFor&lt;#NAME#&gt;(box: UIView) {
         
@@ -46,7 +40,7 @@
     private func loadConstraintsFor&lt;#NAME#&gt;(box: UIView) {
         
     }
-
+    
 //MARK: Event
     
 }

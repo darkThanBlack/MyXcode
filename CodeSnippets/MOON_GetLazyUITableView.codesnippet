@@ -16,7 +16,8 @@
         tableView.delegate = self
         tableView.dataSource = self
         tableView.separatorStyle = .none
-//        tableView.register(&lt;#Cell#&gt;.self, forCellReuseIdentifier: "&lt;#Cell#&gt;")
+        tableView.estimatedRowHeight = 44.0
+        //tableView.register(&lt;#Cell#&gt;.self, forCellReuseIdentifier: "&lt;#Cell#&gt;")
         return tableView
     }()
     
