@@ -1,20 +1,17 @@
-# XcodeSnippets
+# MyXcode
 
 #### 项目介绍
-个人代码片段集，不定时更新
+Xcode IDE 个人配置
 
+路径：``~/Library/Developer/Xcode/UserData/``
 
+* CodeSnippets：代码片段
+* FontAndColorThemes：主题
+* KeyBindings：快捷键
 
 #### 使用说明
 
-* Xcode代码片段路径（截止v9.4.1）：``~/Library/Developer/Xcode/UserData/CodeSnippets``
-
-```powershell
-$ chmod +x ./manager.sh
-$ ./manager.sh
-```
-
-或者手动将 CodeSnippets 文件夹下内容全部拷贝过去即可，如果有老的注意自行处理
+手动拷贝
 
 #### 关键字
 
