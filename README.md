@@ -1,13 +1,18 @@
 # MyXcode
 
 #### 项目介绍
-Xcode IDE 个人配置
+* Xcode IDE 个人配置
+  * 路径：``~/Library/Developer/Xcode/UserData/``
+  * CodeSnippets：代码片段
+  * FontAndColorThemes：主题
+  * KeyBindings：快捷键
 
-路径：``~/Library/Developer/Xcode/UserData/``
+* 清理 Xcode 磁盘空间
 
-* CodeSnippets：代码片段
-* FontAndColorThemes：主题
-* KeyBindings：快捷键
+  ```shell
+  $ chmod +x clean_my_xcode.sh
+  $ ./clean_my_xcode.sh
+  ```
 
 #### 使用说明
 
