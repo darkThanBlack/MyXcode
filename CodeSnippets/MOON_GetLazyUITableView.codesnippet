@@ -6,7 +6,6 @@
 	<string>MOON_GetLazyUITableView</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
@@ -26,14 +25,21 @@
             
         }
     }
-
+    
     extension &lt;#UIViewController#&gt;: UITableViewDataSource {
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -&gt; Int {
-            return 3
+            return &lt;#cells#&gt;.count
         }
         
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -&gt; UITableViewCell {
-            return UITableViewCell()
+            if indexPath.row &lt; &lt;#cells#&gt;.count,
+               let cellInfo = &lt;#cells#&gt;[indexPath.row],
+               let cell = tableView.dequeueReusableCell(withIdentifier: "&lt;#Cell#&gt;") as? &lt;#Cell#&gt; {
+                cell.configCell(data: cellInfo)
+                return cell
+            } else {
+                return UITableViewCell()
+            }
         }
     }
 </string>

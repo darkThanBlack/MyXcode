@@ -9,39 +9,34 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>class &lt;#NAME#&gt;ViewController: UIViewController {
+	<string>///&lt;#NAME#&gt;
+class &lt;#NAME#&gt;ViewController: UIViewController {
     
-//MARK: Interface
+    //MARK: Interface
     
-    //private let viewInfo = &lt;#NAME#&gt;ViewModel()
+    //private let vm = &lt;#NAME#&gt;ViewModel()
     //private let request = &lt;#NAME#&gt;Requests()
     
-//MARK: Life Cycle
+    //MARK: Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        loadViewsFor&lt;#NAME#&gt;(box: view)
+        loadViews(in: view)
     }
     
-//MARK: Data
+    //MARK: View
     
-    private func loadRequestFor&lt;#NAME#&gt;() {
+    private func loadViews(in box: UIView) {
+        
+        loadConstraints(in: box)
+    }
+    
+    private func loadConstraints(in box: UIView) {
         
     }
     
-//MARK: View
-    
-    private func loadViewsFor&lt;#NAME#&gt;(box: UIView) {
-        
-        loadConstraintsFor&lt;#NAME#&gt;(box: box)
-    }
-    
-    private func loadConstraintsFor&lt;#NAME#&gt;(box: UIView) {
-        
-    }
-    
-//MARK: Event
+    //MARK: Event
     
 }
 </string>

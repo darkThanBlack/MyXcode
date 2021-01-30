@@ -17,11 +17,14 @@
         &lt;#Button#&gt;.titleLabel?.font = UIFont.systemFont(ofSize: &lt;#Size#&gt;, weight: .regular)
         &lt;#Button#&gt;.setTitleColor(&lt;#T##color: UIColor?##UIColor?#&gt;, for: .normal)
         &lt;#Button#&gt;.setTitleColor(&lt;#T##color: UIColor?##UIColor?#&gt;.withAlphaComponent(0.6), for: .highlighted)
-        &lt;#Button#&gt;.addTarget(self, action: #selector(&lt;#Button#&gt;Event), for: .touchUpInside)
+        &lt;#Button#&gt;.setImage(UIImage(named: "&lt;#Name#&gt;"), for: .normal)
+        &lt;#Button#&gt;.setImage(UIImage(named: "&lt;#Name#&gt;"), for: .highlighted)
+        &lt;#Button#&gt;.contentEdgeInsets = &lt;#Insets#&gt;
+        &lt;#Button#&gt;.addTarget(self, action: #selector(&lt;#Button#&gt;Event(button:)), for: .touchUpInside)
         return &lt;#Button#&gt;
     }()
     
-    @objc private func &lt;#Button#&gt;Event() {
+    @objc private func &lt;#Button#&gt;Event(button: UIButton) {
         
     }</string>
 	<key>IDECodeSnippetIdentifier</key>

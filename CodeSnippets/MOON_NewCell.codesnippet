@@ -11,7 +11,7 @@
 	<key>IDECodeSnippetContents</key>
 	<string>///&lt;#NAME#&gt;Cell 用户事件
 protocol &lt;#NAME#&gt;CellDelegate: class {
-    func &lt;#NAME#&gt;Event(cell: &lt;#NAME#&gt;Cell)
+    func &lt;#NAME#&gt;(cell: &lt;#NAME#&gt;Cell, event: &lt;#NAME#&gt;Cell.Event)
 }
 
 ///&lt;#NAME#&gt;Cell 数据源
@@ -23,6 +23,9 @@ class &lt;#NAME#&gt;Cell: UITableViewCell {
 
 //MARK: Interface
     
+    enum Event {
+        
+    }
     private weak var delegate: &lt;#NAME#&gt;CellDelegate?
     func bindCell(delegate: &lt;#NAME#&gt;CellDelegate) {
         self.delegate = delegate
